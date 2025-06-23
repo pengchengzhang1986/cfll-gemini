@@ -20,6 +20,7 @@ async function handler(req: Request): Promise<Response> {
 
   // 2. Construct the full Gemini API URL
   const baseUrl = "https://generativelanguage.googleapis.com/";
+  const baseUrl = "https://pengchengzhang-gemini.deno.dev";
   const targetUrlString = `${baseUrl}${targetPath}${incomingUrl.search}`;
 
   // 3. Validate that the constructed URL is valid
